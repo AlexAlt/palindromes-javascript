@@ -21,6 +21,12 @@ $(document).ready(function() {
       });
     } else {
       $('.not').text('not');
+      $('body').css({
+        backgroundImage: 'none'
+      });
+      $('#result').css({
+        color: "black"
+      });
     }
 
     $('#result').fadeIn();
