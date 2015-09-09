@@ -3,22 +3,27 @@
   <head>
     <title>Palindromes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
-      <h2>Is it a palindrome?</h2>
+      <div class="jumbotron intro">
+        <h2>Is it a Palindrome?</h2>
+        <h4>A Palindrome reads the same backwards and forwards</h4>
+        <p>Discover some Palindromes below</p>
+      </div>
       <form id="palindrome-form">
         <label for="user-input">Enter a word or sentence</label>
         <input id="user-input" type="text" required="true">
 
-        <button class="btn-default" type="submit">Palindrome???????</button>
+        <button class="btn-link" type="submit"><i class="mega-octicon octicon-mirror"></i></button>
       </form>
 
       <div id="result">
-        <p>It is <span class="not"></span> a palindrome!!</p>
+        <p>It is <span class="not"></span> a Palindrome!!</p>
       </div>
     </div>
 

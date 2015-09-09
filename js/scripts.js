@@ -9,8 +9,17 @@ $(document).ready(function() {
   $('form#palindrome-form').submit(function(event) {
     var palindrome = isPalindrome($('input#user-input').val());
 
-    $('.not').text('');
-    if (!palindrome) {
+    if (palindrome) {
+      $('.not').text('');
+      $('.palin').fadeIn();
+      $('body').css({
+        backgroundImage: 'url(./img/fey-palin-side-by-side.jpg)'
+        ,backgroundRepeat: 'repeat'
+      });
+      $('#result').css({
+        color: "#66FF33"
+      });
+    } else {
       $('.not').text('not');
     }
 
