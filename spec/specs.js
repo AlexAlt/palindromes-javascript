@@ -11,4 +11,7 @@ describe("isPalindrome", function() {
     expect(isPalindrome('a man a plan a canal panama')).to.equal(true);
   });
 
+  it('returns true if a number is a palindrome', function() {
+    expect(isPalindrome(8008)).to.equal(true);
+  });
 });
